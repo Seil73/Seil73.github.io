@@ -215,7 +215,7 @@ header #logo img {
   border-radius: 15px 15px 15px 15px;
   position: fixed;
   z-index: 1000;
-  top: 90%;
+  top: 90vh;
 }
 
 .menu  {
