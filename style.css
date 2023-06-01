@@ -1,0 +1,486 @@
+body{
+  background-color: #162b4e;
+  background-image: url('fondo.gif');
+  background-position: center center;
+  background-size: cover;
+}
+.web{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+
+  left: 0px;
+}
+/*Menú*/
+.menu-0{/*Fondo del menú*/
+  width: 100%;
+  height: 100px;
+  background-color: f4f4f4;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+.menu-1{ /*Logo del menú*/
+  width: 100%;
+  position: fixed;
+  top: 5px;
+  left: 20px;
+  z-index: 100;
+}
+.menu-1 img{/*Logo del menú*/
+  width: 90px;
+  height: 90px;
+  z-index: 100;
+}
+.menu-2{/*Links del menú*/
+  position: fixed;
+  top: 40px;
+  left: 28%;
+  z-index: 100;
+}
+.menu-2 a{/*links del menu letra*/
+  /*font-weight: bold;*/
+  color: #cda434;
+  text-decoration: none;
+  font-weight: 400px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.menu-2 a:hover{
+  /*background: #162b4e;*/
+  color: black;
+}
+.menu-3{ /*numeros de contacto*/
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 100;
+}
+.menu-3 a{/*links del menu letra*/
+  /*font-weight: bold;*/
+  color: #cda434;
+  text-decoration: none;
+  font-weight: 400px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+/*Termina menú*/
+/*Carrete de fotos*/
+.slider {
+  position: absolute;
+  top: 110px;
+  left: 4px;
+  width: 99%;
+  height: 387px;
+  overflow: hidden;
+  border: 0px solid #2c3e50;
+  margin-bottom: 0px;
+  border-radius: 15px;
+  box-shadow: 5px 8px 12px black;
+  resize: none;
+}
+
+#btn-prev, #btn-next:hover {
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 200%;
+  height: 387px;
+  animation: cambio 5s infinite alternate linear;
+}
+
+.slider img {
+  width: 99%;
+  height: 387px;
+}
+
+@keyframes cambio {
+  0% {margin-left: 0;}
+  45% {margin-left: 0;}
+
+  50% {margin-left: -100%;}
+  100% {margin-left: -100%;}
+}
+/*Termina carrete de fotos*/
+/*Conocenos*/
+.tr{
+  border: 5px solid black;
+}
+.conocenos{
+  margin: 0;
+  min-height: 100%;
+  max-width: 100%;
+  position: relative;
+  top: 400px;
+  left: 0px;
+}
+.conocenos font{
+  color: #cda434;
+  font-size: 50px;
+  font-family: georgia;
+}
+.conocenos p {
+  color: #fff;
+  font-size: 150%;
+  line-height: 155%;
+  text-indent: 2%;
+  text-align: center;
+  padding-right: 5px;
+}
+.conocenos hr { /*Linea de diseño*/
+	background: #ff9d00;
+	width: 40%;
+	height: 5px;
+	border: none;
+	margin: 20px 0;
+	border-radius: 50px;
+}
+.conocenos h3 {
+  font-size: 195%;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.conocenos img{ /*Sección dividida en dos columnas*/
+  display: block;/*Sirve para centrar imagen al centro*/
+  margin: auto;/*Sirve para centrar imagen al centro*/
+  height: 150px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 5px 8px 12px black;
+}
+/*Termina Conocenos*/
+/*Cuadricula de imagenes*/
+.cuadricula hr { /*Linea de diseño*/
+  background: #ff9d00;
+  width: 90%;
+  height: 5px;
+  border: none;
+  margin: 20px 0;
+  border-radius: 50px;
+  display: block;
+  margin: auto;
+}
+
+.cuadricula * {
+  box-sizing: border-box;
+}
+
+.columna {
+  float: left;
+  width: 20%; /*Cambiar porcentaje para cantidad de imagenes 2x2=50% 3x3=33% 4x4=25%*/
+  padding-right: 5px;
+  padding-top: 10px;
+}
+
+.fila::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.cuadricula img {
+  /* Para que sea responsiva */
+  width: 100%;
+}
+
+.cuadricula font {
+  color: #cda434;
+  font-size: 35px;
+  font-family: : georgia;
+}
+/*Termina Cuadricula de imagenes*/
+/*Formulario*/
+.formulario font {
+  color: black;
+  font-size: 150%;
+  line-height: 155%;
+  text-indent: 2%;
+  text-align: center;
+  padding-right: 5px;
+}
+.formulario form {
+  width: 410px;
+  margin: auto;
+  background-color: #f4f4f4;
+  margin-top: 0;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 5px 8px 12px black;
+  padding-bottom: 10px;
+}
+.formulario input {
+  margin: 15px;
+  padding: 10px;
+  width: 380px;
+  font-size: 18px;
+  border: 1px black;
+  margin-bottom: 5px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.formulario select {
+  margin: 15px;
+  padding: 10px;
+  width: 380px;
+  font-size: 18px;
+  border: none;
+  margin-bottom: 5px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.formulario button {
+  background-color: #ff9d00;
+  color: #f4f4f4;
+  margin: 15px;
+  padding: 10px;
+  width: 380px;
+  font-size: 18px;
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.formulario textarea {
+  font-size: 18px;
+  margin: 15px;
+  padding: 10px;
+  min-width: 380px;
+  max-width: 640px;
+  min-height: 100px;
+  max-height: 200px;
+  border: none;
+  border-radius: 15px 15px 15px 15px;
+}
+/*termina Formulario*/
+/*Licenciaturas*/
+.licenciaturas{
+  /*background-image: url(img/pics/libros.png);*/
+  margin: 0;
+  min-height: 100%;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*background-attachment: fixed;*/
+  position: relative;
+  top: 480px;
+  left: 0px;
+}
+.licenciaturas font{
+  color: #cda434;
+  font-size: 50px;
+  font-family: georgia;
+}
+.licenciaturas p {
+  color: #fff;
+  font-size: 150%;
+  line-height: 155%;
+  text-indent: 2%;
+  text-align: center;
+  padding-right: 5px;
+}
+.licenciaturas hr { /*Linea de diseño*/
+	background: #ff9d00;
+	width: 90%;
+	height: 5px;
+	border: none;
+	margin: 20px 0;
+	border-radius: 50px;
+  display: block;
+  margin: auto;
+}
+.licenciaturas h3 {
+  font-size: 195%;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.licenciaturas img{ /*Sección dividida en dos columnas*/
+  display: block;/*Sirve para centrar imagen al centro*/
+  margin: auto;/*Sirve para centrar imagen al centro*/
+  height: 150px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 5px 8px 12px black;
+}
+.licenciaturas a{/*links del menu letra*/
+  /*font-weight: bold;*/
+  color: #cda434;
+  text-decoration: none;
+  font-weight: 400px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.licenciaturas a:hover{
+  /*background: #162b4e;*/
+  color: #f4f4f4 ;
+}
+/*Termina Licenciaturas*/
+
+/*Gestoria*/
+.tr{
+  border: 5px solid black;
+}
+.carreras{
+  /*background-image: url(img/pics/libros.png);*/
+  margin: 0;
+  min-height: 100%;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*background-attachment: fixed;*/
+  position: relative;
+  top: 400px;
+  left: 0px;
+}
+.carreras font{
+  color: #cda434;
+  font-size: 50px;
+  font-family: georgia;
+}
+.carreras p {
+  color: #fff;
+  font-size: 150%;
+  line-height: 155%;
+  text-indent: 2%;
+  text-align: center;
+  padding-right: 5px;
+}
+.carreras hr { /*Linea de diseño*/
+	background: #ff9d00;
+	width: 40%;
+	height: 5px;
+	border: none;
+	margin: 20px 0;
+	border-radius: 50px;
+}
+.carreras h3 {
+  font-size: 195%;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.carreras img{ /*Sección dividida en dos columnas*/
+  display: block;/*Sirve para centrar imagen al centro*/
+  margin: auto;/*Sirve para centrar imagen al centro*/
+  height: 150px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 5px 8px 12px black;
+}
+/*Termina gestoria*/
+
+
+/*Gestoria*/
+.tr{
+  border: 5px solid black;
+}
+.gestoria{
+  /*background-image: url(img/pics/libros.png);*/
+  margin: 0;
+  min-height: 100%;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*background-attachment: fixed;*/
+  position: relative;
+  top: 200px;
+  left: 0px;
+}
+.gestoria font{
+  color: #cda434;
+  font-size: 50px;
+  font-family: georgia;
+}
+.gestoria p {
+  color: #fff;
+  font-size: 150%;
+  line-height: 155%;
+  text-indent: 2%;
+  text-align: center;
+  padding-right: 5px;
+}
+.gestoria hr { /*Linea de diseño*/
+	background: #ff9d00;
+	width: 40%;
+	height: 5px;
+	border: none;
+	margin: 20px 0;
+	border-radius: 50px;
+}
+.gestoria h3 {
+  font-size: 195%;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.gestoria img{ /*Sección dividida en dos columnas*/
+  display: block;/*Sirve para centrar imagen al centro*/
+  margin: auto;/*Sirve para centrar imagen al centro*/
+  height: 150px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 5px 8px 12px black;
+}
+/*Termina gestoria*/
+
+/* Contacto */
+.division-contacto {
+  border-top: 2px solid #aadcd2;
+  clear: both;
+  padding: 2%;
+}
+
+.contacto li p {
+  line-height: 100%;
+}
+
+.contacto font {
+  color: #cda434;
+  font-size: 25px;
+  font-family: : georgia;
+}
+.datos {
+  text-align: center;
+}
+
+.datos p {
+  text-align: center;
+  color: #fff;
+  font: 160%;
+  font-size: 130%;
+  line-height: 0;
+}
+
+.datos li {
+  display: inline;
+}
+
+.datos i {
+  font-size: 420%;
+  margin: 1%;
+  padding: 0;
+  color: #c3d7df;
+}
+
+.direccion-padding {
+  width: 98%;
+  margin: 0;
+  padding: 1%;
+}
+.direccion-padding iframe{
+  border-radius: 15px;
+  box-shadow: 5px 8px 12px black;
+}
+/* Termina contacto*/
