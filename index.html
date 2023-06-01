@@ -1,0 +1,334 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <title>ITEB Coacalco</title>
+  <!-- -->
+  <!--Slider-->
+  <link rel="shortcut icon" type="image/x-icon" href="img/itebIcono.jpg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!--Iconos-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Estilos-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="web">
+  <!--Menú de la pagina-->
+  <div class="menu-0">
+  </div>
+  <div class="menu-1">
+    <a href="index.html"><img src="img/logoiteb.png"></a>
+  </div>
+  <div class="menu-2">
+    <a href="index.html">|Home|</a>
+    <a href="ofertaeducativa.html">|Oferta Educativa|</a>
+    <a href="index.html#conocenos">|Conócenos|</a>
+    <a href="#contact">|Contacto|</a>
+    <a href="gestoria.html">|Gestoría|</a>
+  </div>
+  <div class="menu-3">
+    <li>
+        <i class="fa fa-phone">
+          <a href="#">55-90-64-27-60</a>
+        </i>
+        <i class="fa fa-whatsapp">
+          <a href="#">55-39-61-19-28</a>
+        </i>
+    </li>
+  </div>
+  <!--Termina Menú de la pagina-->
+  <!--Carrete de fotos-->
+  <div class="slider">
+  <script language="JavaScript1.1">
+var specifyimage=new Array() //Your images
+specifyimage[0]="img/slider/horizontal1.jpg"
+specifyimage[1]="img/slider/horizontal2.jpg"
+specifyimage[2]="img/slider/horizontal3.jpg"
+specifyimage[3]="img/slider/horizontal4.jpg"
+specifyimage[4]="img/slider/horizontal5.jpg"
+var delay=5000 //3 seconds
+//Counter for array
+var count =1;
+var cubeimage=new Array()
+for (i=0;i<specifyimage.length;i++){
+cubeimage[i]=new Image()
+cubeimage[i].src=specifyimage[i]
+}
+function movecube(){
+if (window.createPopup)
+cube.filters[0].apply()
+document.images.cube.src=cubeimage[count].src;
+if (window.createPopup)
+cube.filters[0].play()
+count++;
+if (count==cubeimage.length)
+count=0;
+setTimeout("movecube()",delay)
+}
+window.onload=new Function("setTimeout('movecube()',delay)")
+</script><img src="img/slider/horizontal1.jpg" name="cube" border="0" style="filter:progid:DXImageTransform.Microsoft.Stretch(stretchStyle=&#39;PUSH&#39;)" />
+  </div>
+  <!--Termina Carrete de fotos-->
+  <div class="conocenos" id="conocenos">
+    <table border="0">
+      <tr>
+        <td colspan="2">
+          <font><center><br><br>Conócenos</center></font>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            Somos un centro de estudios con 6 años de experiencia, formando los futuros profesionistas.
+            <br>
+            Contamos con un equipo de profesionales especializados en su área, comprometidos en capacitar a nuestra población estudiantil, para afrontar al sector laboral y / o profesional.
+          </p>
+          <hr>
+        </td>
+        <td>
+          <h3><center>¡Solicita información!</center></h3>
+          <div class="formulario">
+            <form action="https://formsubmit.co/zearo.david@gmail.com" method="POST">
+              <input type="text" name="nombre" id="nombre" class="nombre" placeholder="NOMBRE">
+              <input type="text" name="email" id="email" class="email" placeholder="CORREO">
+              <input type="text" name="telefono" id="telefono" class="telefono" placeholder="TELÉFONO">
+              <font><center>ASUNTO</center></font>
+              <select type="text" name="asunto" id="asunto" class="asunto" placeholder="ASUNTO">
+                <option>Bachillerato</option>
+                <option>Licenciatura</option>
+                <option>Cursos</option>
+              </select>
+              <textarea name="mesaje" class="mensaje" placeholder="MENSAJE ..." id="mensaje"></textarea>
+              <div class="clear"></div>
+              <div class="col-md-8">
+                <button type="submit" class="btn btn-primary">ENVIAR </button>
+              </div>
+            </form>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h3>MISIÓN</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            Somos un centro educativo precursor en la generación, aplicación, difusión y transmisión del conocimiento, así como de valores y hábitos personales, fundada principalmente para contribuir al desarrollo económico y social de nuestra nación.
+          </p>
+        </td>
+        <td>
+          <img src="img/pics/mision.jpg">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h3>VISIÓN</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="img/pics/vision.jpg">
+        </td>
+        <td>
+          <p>
+            Aumentar nuestro reconocimiento por la calidad y compromiso que tenemos con nuestros estudiantes, así mismo poder competir con las grandes instituciones educativas, egresando un mayor número de estudiantes en cada generación.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h3>OBJETIVOS</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            Nuestra principal labor conjuntamente con un grupo de expertos en el área docente, es dar el apoyo e impulso para concluir su formación profesional a todos aquellos jóvenes que por múltiples razones no han podido concluir su educación, en sus diferentes niveles de preparación.
+          </p>
+        </td>
+        <td>
+          <img src="img/pics/objetivos.jpg">
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <!-- Cuadricula imagenes  -->
+              <div class="cuadricula">
+                <hr>
+                <div class="fila">
+                    <div class="columna">
+                      <img src="img/cuadricula/imagen1.jpeg">
+                    </div>
+                    <div class="columna">
+                      <img src="img/cuadricula/imagen2.jpeg">
+                    </div>
+                    <div class="columna">
+                      <img src="img/cuadricula/imagen3.jpeg">
+                    </div>
+                    <div class="columna">
+                      <img src="img/cuadricula/imagen4.jpeg">
+                    </div>
+                    <div class="columna">
+                        <img src="img/cuadricula/imagen5.jpeg">
+                    </div>
+                </div>
+                <div class="fila">
+                  <div class="columna">
+                    <img src="img/cuadricula/imagen6.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen7.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen8.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen9.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen10.jpeg">
+                  </div>
+                </div>
+                <div class="fila">
+                  <div class="columna">
+                    <img src="img/cuadricula/imagen11.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen12.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen13.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen14.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen15.jpeg">
+                  </div>
+                </div>
+                <div class="fila">
+                  <div class="columna">
+                    <img src="img/cuadricula/imagen16.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen17.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen18.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen19.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen20.jpeg">
+                  </div>
+                </div>
+                <br>
+                <hr>
+                <font id="convenios"><center>Convenios</center></font>
+                <div class="fila">
+                  <div class="columna">
+                    <img src="img/cuadricula/imagen21.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen22.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen23.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen24.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen25.jpeg">
+                  </div>
+                  <div class="columna">
+                      <img src="img/cuadricula/imagen26.jpeg">
+                  </div>
+                </div>
+              </div>
+          <!-- Termina Cuadricula imagenes  -->
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <font id="contact"><center><br><br>Contacto</center></font>
+          <div class="contacto">
+            <ul class="datos">
+                <li>
+                  <a href="mailto:itebcoacalco.educacion@gmail.com?subject=feedback" target="_blank">
+                    <i class="fa fa-envelope-o">
+                      <font>
+                        itebcoacalco.educacion@gmail.com
+                      </font>
+                    </i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=100081830616109" target="_blank">
+                    <i class="fa fa-facebook">
+                      <font color="#00bfff" size="5">
+                        Iteb Coacalco
+                      </font>
+                    </i>
+                  </a>
+                </li>
+                <li>
+                  <i class="fa fa-whatsapp">
+                    <font color="#00bfff" size="5">
+                      55-39-61-19-28
+                    </font>
+                  </i>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@itebcoacalco5224" target="_blank">
+                    <i class="fa fa-youtube">
+                      <font color="#00bfff" size="5">
+                        Iteb Coacalco
+                      </font>
+                    </i>
+                  </a>
+                </li>
+                <li>
+                    <i class="fa fa-phone">
+                      <font color="#00bfff" size="5">
+                        55-90-64-27-60
+                      </font>
+                    </i>
+                </li>
+                <div class="division-transparente"></div>
+                <div class="direccion-padding">
+                  <li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.3236673635956!2d-99.09739792691119!3d19.65619208167151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f3c61905fb53%3A0x95d4829c58bc4c38!2sITEB%20Coacalco!5e0!3m2!1ses!2smx!4v1684962517068!5m2!1ses!2smx" width="350" height="275" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                  </li>
+                  <li>
+                    <p>
+                      Boulevard Coacalco 571, Villa de las Flores, 55710 Ciudad de México, Méx.
+                    </p>
+                  </li>
+                </div>
+              </ul>
+            </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!--<div class="caja-1">
+    <div class="caja-2">
+      Hola
+    </div>
+  </div>-->
+  </div>
+</body>
+</html>
